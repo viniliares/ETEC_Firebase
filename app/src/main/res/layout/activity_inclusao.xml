@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.InclusaoActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/azul"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/personagem"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/branco"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1">
+
+            <TextView android:text="@string/nome" />
+            <EditText
+                android:id="@+id/editNome"
+                android:inputType="text" />
+
+            <TextView android:text="@string/apelido" />
+            <EditText
+                android:id="@+id/editApelido"
+                android:inputType="text" />
+
+            <TextView android:text="@string/sexo" />
+            <RadioGroup
+                android:id="@+id/groupSexo"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioFeminino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/fem" />
+
+                <RadioButton
+                    android:id="@+id/radioMasculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:text="@string/masc" />
+            </RadioGroup>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="@string/especie" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="@string/status" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <Spinner
+                    android:id="@+id/spnEspecie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/selecione" />
+
+
+                <Spinner
+                    android:id="@+id/spnStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/selecione" />
+
+            </TableRow>
+
+            <Button
+                android:id="@+id/btnSalvarViagem"
+                android:onClick="onSalvar"
+                android:text="@string/salvar" />
+
+        </TableLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ETEC-Firebase</string>
+
+    <string name="personagem">Personagem</string>
+    <string name="nome">Nome</string>
+    <string name="apelido">Apelido</string>
+    <string name="especie">Espécie</string>
+    <string name="sexo">Sexo</string>
+    <string name="status">Status</string>
+
+    <string name="masc">Masculino</string>
+    <string name="fem">Feminino</string>
+
+    <string name="salvar">Salvar</string>
+
+    <string name="selecione">Selecione</string>
+    <string name="confirmacao">Confirmação</string>
+    <string name="ok">OK</string>
+    <string name="msg_insercao_sucesso">Registro inserido com sucesso!!</string>
+
+    <string name="delete_view">Excluir</string>
+
+    <string name="title_activity_main">Cad. Personagens</string>
+
+    <string name="action_include">Incluir</string>
+    <string name="action_list">Listar</string>
+
+</resources>

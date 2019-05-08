@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.etechoracio.firebase.activities.MainActivity">
+    <item
+        android:id="@+id/action_include"
+        android:orderInCategory="100"
+        android:title="@string/action_include"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_list"
+        android:orderInCategory="100"
+        android:title="@string/action_list"
+        app:showAsAction="never" />
+</menu>
